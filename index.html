@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Rolling Disk</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #07111f;
+      --panel: #101e2d;
+      --text: #f4e8c8;
+      --muted: #c7b58d;
+      --accent: #f0ad32;
+      --border: #68451e;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 16px;
+      background: var(--background);
+      color: var(--text);
+      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(680px, 100%);
+      padding: clamp(28px, 6vw, 56px);
+      text-align: center;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 24px 70px rgb(0 0 0 / 28%);
+    }
+
+    h1 { margin: 0 0 8px; color: var(--accent); }
+    p { color: var(--muted); }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 11px 18px;
+      color: #07111f;
+      background: #ffd477;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Rolling Disk</h1>
+    <p>Official support and privacy information for Rolling Disk.</p>
+    <nav aria-label="Site links">
+      <a href="support.html">Support</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </main>
+</body>
+</html>
